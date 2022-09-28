@@ -5,6 +5,7 @@
 :root {
     --seafoam: rgb(101, 187, 187);
     --dark_grey: rgba(13, 13, 13, 0.773);
+    --white: white;
 }
 
 
@@ -36,7 +37,43 @@ body {
     height: 200px;
 }
 
-/* !!not responsive with sizing!! */
+/* links */
+
+#AboutMeLink {
+    color: var(--seafoam);
+}
+
+#WorkLink {
+    color: var(--seafoam);
+}
+
+#ContactMeLink {
+    color: var(--seafoam);
+}
+
+#ResumeLink {
+    color: var(--seafoam);
+}
+
+/* hover colors */
+
+#AboutMeLink:hover {
+    color: white;
+}
+
+#WorkLink:hover {
+    color: white;
+}
+
+#ContactMeLink:hover {
+    color: white;
+}
+
+#ResumeLink:hover {
+    color: white;
+}
+
+/* Subtitle */
 
 #subtitle {
     background-color: var(--dark_grey);
@@ -74,7 +111,8 @@ main {
 
 #about_me {
     text-align: end;
-    border-right: solid 3px var(--seafoam); 
+    color: var(--dark_grey);
+    border-right: solid 3px var(--dark_grey); 
 }
 
 p {
@@ -83,39 +121,41 @@ p {
     justify-content: flex-start;
     min-height: 100%;
     padding: 10px;
-    /* width: -60%;
-    text-align: justify;
-    text-align: right; */
 }
 
 /* resized images manually */
 
-#skiingImg {
+.skiingImg {
     width: 800px;
     height: 350px;
+    border: 4px solid var( --seafoam);
 }
 
-#discGolfImg {
+.discGolfImg {
     width: 400px;
     height: 225px;
+    border: 4px solid var( --seafoam);
 }
 
-#hikingImg {
+.hikingImg {
     width: 400px;
     height: 225px;
+    border: 4px solid var( --seafoam);
 }
 
-#tennisImg {
+.tennisImg {
     width: 400px;
     height: 225px;
+    border: 4px solid var( --seafoam);
 }
 
-#dogsImg {
+.dogsImg {
     width: 400px;
     height: 225px;
+    border: 4px solid var( --seafoam);
 }
 
-/* display grid practice */
+/* display grid */
 
 .grid {
     display: grid;
@@ -134,19 +174,19 @@ p {
     grid-area: sidebar;
     width: 100%;
     text-align: end; 
-    border-right: solid 3px var(--seafoam); 
-    height:375px;      
+    border-right: solid 3px var(--dark_grey); 
+    height:375px; 
+    color: var(--dark_grey);     
 }
+/* grid placement */
 
 #skiing {
     grid-area: mainPic;
     display: grid;
-
 }
 
 #hiking {
     grid-area: picture1;
-
 }
 
 #disc_golf {
@@ -161,6 +201,27 @@ p {
     grid-area: picture4;
 }
 
+/* hover feature */
+
+.skiingImg:hover {
+  border: 4px solid var( --dark_grey);
+}
+
+.discGolfImg:hover {
+  border: 4px solid var( --dark_grey);
+}
+
+.tennisImg:hover {
+  border: 4px solid var( --dark_grey);
+}
+
+.dogsImg:hover {
+  border: 4px solid var( --dark_grey);
+}
+
+.hikingImg:hover {
+  border: 4px solid var( --dark_grey);
+}
 
 /* footer - spaced out and responsive with resizing*/
 
@@ -172,7 +233,6 @@ p {
     padding: 10px;
     margin-bottom: 30px;
     align-items: center;
-    */
 }
 
 .contact {
@@ -185,5 +245,37 @@ p {
 
 #contact_me {
     text-align: end;
-    border-right: solid 3px var(--seafoam);
+    color: var(--dark_grey);
+    border-right: solid 3px var(--dark_grey);
+}
+
+/* media querries */
+/* changed header background */
+
+@media screen and (min-width: 768px) {
+  /* on tablets, set columns to only be 50% of the width and not grow */
+  .card-column {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  /* select the last child to grow to full width if it has space to grow */
+  .card-column:last-child {
+    flex-grow: 1;
+  }
+}
+
+/* media query for larger screens */
+@media screen and (max-width: 992px) {
+  header {
+    width: 100%;
+  }
+
+  .card-column {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
+
+#nav {
+    width: 50%;
 }
