@@ -2,11 +2,11 @@
 
 #### Here is an external link to my portfolio site:
 
-https://kmaddox2122.github.io/myportfolio/
+https://kmaddox2122.github.io/MyPortfolio/
 
 #### Here is a preview:
 
-![Alt text](./Assets/Images/Screenshot.png?raw=true "Screenshot")
+![Alt text](02-Challenge/Assets/Images/Screenshot.png?raw=true "Screenshot")
 
 #### Main Take-away: Created a template for my portfolio in order to update as I progress through the bootcamp.
 
