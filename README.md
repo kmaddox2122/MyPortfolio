@@ -21,5 +21,9 @@ https://kmaddox2122.github.io/MyPortfolio/
 ### What I learned:
     While putting together this portfolio, I have learned a couple important points. A good foundation is key to starting out a project so that minimal adjustments have to be made to it later on.  I also learned alot about CSS. This is a language of infinate possibilities and thus provides limitless options. This is both exciting and frustrating to a new coder! But mostly exciting to see the myriad options to learn.
 
+### Credits
+    - https://bootstrapmade.com/bootstrap-portfolio-templates/
+    - https://www.pexels.com/
+
 #### License
     Please see GitHub.
