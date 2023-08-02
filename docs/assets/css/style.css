@@ -408,6 +408,12 @@ h6,
   }
 }
 
+@media (min-width: 768px) {
+  .col-md-4 {
+      width: 38.33333333%;
+  }
+}
+
 .custom-navbar .navbar-brand {
   font-size: 1.7rem;
 }
@@ -514,4 +520,19 @@ h6,
 
 .social a:hover {
   color: #000;
+}
+
+.current-proj {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+  background: aliceblue;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.current-proj-photo {
+  width: 250px;
+  margin: auto;
 }
