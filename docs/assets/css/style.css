@@ -408,11 +408,11 @@ h6,
   }
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .col-md-4 {
       width: 38.33333333%;
   }
-}
+} */
 
 .custom-navbar .navbar-brand {
   font-size: 1.7rem;
